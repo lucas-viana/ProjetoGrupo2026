@@ -404,3 +404,62 @@ footer {
         gap: 1rem;
     }
 }
+
+/* Inscrição Section */
+.inscricao-bg {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+}
+
+.inscricao-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.inscricao-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+.inscricao-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+}
+
+.info-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--accent-primary);
+}
+
+.info-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.inscricao-btn {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+}
+
+.inscricao-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
