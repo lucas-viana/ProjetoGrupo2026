@@ -1,14 +1,14 @@
 :root {
-  --green-950: #08331f;
-  --green-900: #0b4a2e;
-  --green-800: #0f6a3f;
-  --green-700: #198754;
-  --green-600: #21a366;
+  --green-950: #33082c;
+  --green-900: #3b0b4a;
+  --green-800: #670f6a;
+  --green-700: #831987;
+  --green-600: #9f21a3;
   --green-100: #e9f7ef;
   --green-50: #f5fbf7;
-  --text: #153328;
-  --muted: #5f766c;
-  --line: rgba(13, 74, 46, 0.12);
+  --text: #151633;
+  --muted: #765f76;
+  --line: rgba(74, 13, 64, 0.12);
   --white: #ffffff;
   --shadow: 0 16px 34px rgba(8, 51, 31, 0.12);
   --radius-xl: 28px;
@@ -103,7 +103,7 @@ img {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #3ed07b;
+  background: #d03ec9;
 }
 
 .site-header {
@@ -261,7 +261,9 @@ img {
   padding: 0.95rem 1.25rem;
   border-radius: 999px;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn:hover {
@@ -326,7 +328,11 @@ img {
 
 .hero-slider {
   padding: 1.35rem;
-  background: linear-gradient(135deg, rgba(11,74,46,0.98), rgba(25,135,84,0.94));
+  background: linear-gradient(
+    135deg,
+    rgba(11, 74, 46, 0.98),
+    rgba(25, 135, 84, 0.94)
+  );
   color: var(--white);
 }
 
@@ -339,7 +345,7 @@ img {
 .hero-slider p,
 .hero-slider a,
 .hero-slider span {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-slider-top,
@@ -352,7 +358,7 @@ img {
 }
 
 .badge-green {
-  background: rgba(255,255,255,0.14);
+  background: rgba(255, 255, 255, 0.14);
   color: var(--white);
 }
 
@@ -365,8 +371,8 @@ img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.18);
-  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.12);
   color: var(--white);
   cursor: pointer;
 }
@@ -396,7 +402,11 @@ img {
 }
 
 .section.alt {
-  background: linear-gradient(180deg, rgba(233,247,239,0.6), rgba(245,251,247,0.5));
+  background: linear-gradient(
+    180deg,
+    rgba(233, 247, 239, 0.6),
+    rgba(245, 251, 247, 0.5)
+  );
 }
 
 .section-head {
@@ -431,7 +441,9 @@ img {
 .news-card,
 .institutional-item {
   padding: 1.2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .service-card:hover,
@@ -519,7 +531,7 @@ img {
 }
 
 .feature-panel p {
-  color: rgba(255,255,255,0.88);
+  color: rgba(255, 255, 255, 0.88);
   line-height: 1.75;
 }
 
@@ -591,7 +603,9 @@ img {
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .reveal.visible {
@@ -630,7 +644,7 @@ img {
     top: calc(100% + 0.5rem);
     left: 1rem;
     right: 1rem;
-    background: rgba(255,255,255,0.98);
+    background: rgba(255, 255, 255, 0.98);
     border: 1px solid var(--line);
     border-radius: 22px;
     box-shadow: var(--shadow);
