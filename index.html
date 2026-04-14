@@ -1,546 +1,826 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFSULDEMINAS Campus Machado</title>
-  <meta name="description" content="Exemplo de página estática moderna e responsiva inspirada no portal do IFSULDEMINAS Campus Machado." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFSULDEMINAS Campus Machado</title>
+    <meta
+      name="description"
+      content="Exemplo de página estática moderna e responsiva inspirada no portal do IFSULDEMINAS Campus Machado."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
 
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div class="topbar-brand">
-        <span class="dot"></span>
-        <span>Instituto Federal do Sul de Minas Gerais • Campus Machado</span>
-      </div>
-      <div class="topbar-links">
-        <a href="#servicos">Serviços</a>
-        <a href="#noticias">Notícias</a>
-        <a href="#acesso-rapido">Acesso rápido</a>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-brand">
+          <span class="dot"></span>
+          <span>Instituto Federal do Sul de Minas Gerais • Campus Machado</span>
+        </div>
+        <div class="topbar-links">
+          <a href="#servicos">Serviços</a>
+          <a href="#noticias">Notícias</a>
+          <a href="#acesso-rapido">Acesso rápido</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="#inicio" aria-label="Página inicial do IFSULDEMINAS Campus Machado">
-        <div class="logo-mark">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="logo-text">
-          <strong>IFSULDEMINAS</strong>
-          <small>Campus Machado</small>
-        </div>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="#inicio">Início</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#campus">Campus</a>
-        <a href="#pesquisa">Pesquisa</a>
-        <a href="#extensao">Extensão</a>
-        <a href="#noticias">Notícias</a>
-        <a class="nav-cta" href="#acesso-rapido">Acesso rápido</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="conteudo">
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal visible">
-          <div class="eyebrow">Portal institucional • versão didática</div>
-          <h1>Uma proposta mais fiel ao portal do Campus Machado, com visual atual e estrutura responsiva.</h1>
-          <p>
-            Esta versão reorganiza o conteúdo do portal oficial em uma interface mais contemporânea,
-            mantendo blocos institucionais como serviços, destaques, cursos, campus, pesquisa,
-            extensão, oportunidades, notícias e acesso rápido.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#cursos">Ver cursos</a>
-            <a class="btn btn-secondary" href="#noticias">Últimas notícias</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="logo"
+          href="#inicio"
+          aria-label="Página inicial do IFSULDEMINAS Campus Machado"
+        >
+          <div class="logo-mark">
+            <span></span><span></span><span></span><span></span><span></span>
           </div>
-
-          <div class="hero-stats">
-            <div>
-              <strong>8 atalhos</strong>
-              <span>em Destaques</span>
-            </div>
-            <div>
-              <strong>8 cursos</strong>
-              <span>na área técnica</span>
-            </div>
-            <div>
-              <strong>8 graduações</strong>
-              <span>em Superiores</span>
-            </div>
+          <div class="logo-text">
+            <strong>IFSULDEMINAS</strong>
+            <small>Campus Machado</small>
           </div>
-        </div>
+        </a>
 
-        <div class="hero-panel reveal">
-          <div class="hero-slider card-soft">
-            <div class="hero-slider-top">
-              <span class="badge badge-green">Destaque principal</span>
-              <div class="slider-controls">
-                <button class="slider-btn" id="prevSlide" aria-label="Slide anterior">‹</button>
-                <button class="slider-btn" id="nextSlide" aria-label="Próximo slide">›</button>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#inicio">Início</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#campus">Campus</a>
+          <a href="#pesquisa">Pesquisa</a>
+          <a href="#extensao">Extensão</a>
+          <a href="#noticias">Notícias</a>
+          <a class="nav-cta" href="#acesso-rapido">Acesso rápido</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal visible">
+            <div class="eyebrow">Portal institucional • versão didática</div>
+            <h1>
+              Uma proposta mais fiel ao portal do Campus Machado, com visual
+              atual e estrutura responsiva.
+            </h1>
+            <p>
+              Esta versão reorganiza o conteúdo do portal oficial em uma
+              interface mais contemporânea, mantendo blocos institucionais como
+              serviços, destaques, cursos, campus, pesquisa, extensão,
+              oportunidades, notícias e acesso rápido.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#cursos">Ver cursos</a>
+              <a class="btn btn-secondary" href="#noticias">Últimas notícias</a>
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <strong>8 atalhos</strong>
+                <span>em Destaques</span>
+              </div>
+              <div>
+                <strong>8 cursos</strong>
+                <span>na área técnica</span>
+              </div>
+              <div>
+                <strong>8 graduações</strong>
+                <span>em Superiores</span>
               </div>
             </div>
-            <h2 id="heroTitle">Veja como foi o debate entre candidatos do Campus Machado.</h2>
-            <p id="heroText">
-              Área pensada para reproduzir o espaço de chamadas rotativas do portal oficial,
-              agora com leitura mais clara e melhor contraste visual.
-            </p>
-            <div class="hero-slider-footer">
-              <span id="heroCounter">01 / 06</span>
-              <a href="#oportunidades">Explorar conteúdos</a>
+          </div>
+
+          <div class="hero-panel reveal">
+            <div class="hero-slider card-soft">
+              <div class="hero-slider-top">
+                <span class="badge badge-green">Destaque principal</span>
+                <div class="slider-controls">
+                  <button
+                    class="slider-btn"
+                    id="prevSlide"
+                    aria-label="Slide anterior"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    class="slider-btn"
+                    id="nextSlide"
+                    aria-label="Próximo slide"
+                  >
+                    ›
+                  </button>
+                </div>
+              </div>
+              <h2 id="heroTitle">
+                Veja como foi o debate entre candidatos do Campus Machado.
+              </h2>
+              <p id="heroText">
+                Área pensada para reproduzir o espaço de chamadas rotativas do
+                portal oficial, agora com leitura mais clara e melhor contraste
+                visual.
+              </p>
+              <div class="hero-slider-footer">
+                <span id="heroCounter">01 / 06</span>
+                <a href="#oportunidades">Explorar conteúdos</a>
+              </div>
+            </div>
+
+            <div class="hero-mini-grid">
+              <article class="mini-card">
+                <strong>Serviços</strong>
+                <span
+                  >Contato, agenda, comunicação, transparência e ouvidoria</span
+                >
+              </article>
+              <article class="mini-card">
+                <strong>Acadêmico</strong>
+                <span>Portal do aluno, vestibular, editais e bolsas</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Serviços</span>
+              <h2>Atalhos institucionais principais</h2>
+              <p>
+                Inspirado no bloco de serviços exibido no topo do portal
+                oficial.
+              </p>
             </div>
           </div>
 
-          <div class="hero-mini-grid">
-            <article class="mini-card">
-              <strong>Serviços</strong>
-              <span>Contato, agenda, comunicação, transparência e ouvidoria</span>
+          <div class="service-grid">
+            <a
+              class="service-card reveal"
+              href="https://portal.mch.ifsuldeminas.edu.br/contato"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Contato</strong>
+              <span>Fale com o campus e encontre informações úteis.</span>
+            </a>
+            <a class="service-card reveal" href="#">
+              <strong>Agenda da Diretora</strong>
+              <span
+                >Espaço para divulgação de compromissos institucionais.</span
+              >
+            </a>
+            <a class="service-card reveal" href="#">
+              <strong>Comunicação</strong>
+              <span>Canal de notícias, avisos e ações de divulgação.</span>
+            </a>
+            <a class="service-card reveal" href="#">
+              <strong>Transparência</strong>
+              <span>Acesso a dados e informações institucionais.</span>
+            </a>
+            <a
+              class="service-card reveal"
+              href="https://www.ifsuldeminas.edu.br/ouvidoria"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Ouvidoria</strong>
+              <span
+                >Canal oficial para manifestações e atendimento ao
+                cidadão.</span
+              >
+            </a>
+            <a class="service-card reveal" href="#noticias">
+              <strong>Mais notícias</strong>
+              <span>Consulte os destaques e comunicados publicados.</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="destaques">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Destaques</span>
+              <h2>Atalhos em evidência</h2>
+              <p>
+                Bloco baseado nos botões principais exibidos no portal do Campus
+                Machado.
+              </p>
+            </div>
+          </div>
+
+          <div class="highlight-grid">
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">🎓</div>
+              <h3>Portal do Aluno</h3>
+              <p>Acesso acadêmico centralizado.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">👥</div>
+              <h3>Portal do Servidor</h3>
+              <p>Recursos internos e administrativos.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">🏛️</div>
+              <h3>Portal da Administração</h3>
+              <p>Ferramentas e sistemas institucionais.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">💚</div>
+              <h3>Bolsas e Auxílios</h3>
+              <p>Apoio estudantil e benefícios.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">📝</div>
+              <h3>Vestibular</h3>
+              <p>Processos seletivos e ingresso.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">📢</div>
+              <h3>Editais</h3>
+              <p>Chamadas, seleções e oportunidades.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">🔎</div>
+              <h3>Transparência</h3>
+              <p>Dados e informações públicas.</p>
+            </a>
+            <a class="highlight-card reveal" href="#">
+              <div class="icon-circle">💻</div>
+              <h3>Capacita em Rede</h3>
+              <p>Formação e desenvolvimento online.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cursos">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Nossos cursos</span>
+              <h2>Formações organizadas por modalidade</h2>
+              <p>
+                A composição abaixo foi aproximada a partir das áreas e cursos
+                exibidos no portal oficial.
+              </p>
+            </div>
+          </div>
+
+          <div class="course-columns">
+            <article class="course-block reveal">
+              <div class="course-head">
+                <h3>Técnicos</h3>
+                <a
+                  href="https://portal.mch.ifsuldeminas.edu.br/tecnicos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir página</a
+                >
+              </div>
+              <ul>
+                <li>Agropecuária (integrado)</li>
+                <li>Alimentos (integrado)</li>
+                <li>Informática (integrado)</li>
+                <li>Administração (subsequente)</li>
+                <li>Agropecuária (subsequente)</li>
+                <li>Enfermagem (subsequente)</li>
+                <li>Meio Ambiente (concomitante)</li>
+                <li>Segurança do Trabalho (subsequente)</li>
+              </ul>
             </article>
-            <article class="mini-card">
-              <strong>Acadêmico</strong>
-              <span>Portal do aluno, vestibular, editais e bolsas</span>
+
+            <article class="course-block reveal">
+              <div class="course-head">
+                <h3>Superiores</h3>
+                <a
+                  href="https://portal.mch.ifsuldeminas.edu.br/superiores"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir página</a
+                >
+              </div>
+              <ul>
+                <li>Administração</li>
+                <li>Alimentos</li>
+                <li>Ciências Biológicas</li>
+                <li>Computação</li>
+                <li>Agronomia</li>
+                <li>Sistemas de Informação</li>
+                <li>Zootecnia</li>
+                <li>Pedagogia EaD</li>
+              </ul>
+            </article>
+
+            <article class="course-block reveal compact">
+              <div class="course-head">
+                <h3>Outras modalidades</h3>
+                <a href="#acesso-rapido">Ver atalhos</a>
+              </div>
+              <ul>
+                <li>
+                  <a
+                    href="https://portal.mch.ifsuldeminas.edu.br/pos-graduacao-lato-sensu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Pós-graduação - Lato Sensu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://portal.mch.ifsuldeminas.edu.br/mestrado-em-alimentos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Mestrado em Alimentos</a
+                  >
+                </li>
+                <li><a href="#">Cursos FIC</a></li>
+                <li>
+                  <a
+                    href="https://portal.mch.ifsuldeminas.edu.br/cursos-ead"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Cursos EaD</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://mooc.mch.ifsuldeminas.edu.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >MOOCs</a
+                  >
+                </li>
+                <li><a href="#">Como ingressar</a></li>
+              </ul>
             </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="servicos">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Serviços</span>
-            <h2>Atalhos institucionais principais</h2>
-            <p>Inspirado no bloco de serviços exibido no topo do portal oficial.</p>
-          </div>
-        </div>
-
-        <div class="service-grid">
-          <a class="service-card reveal" href="https://portal.mch.ifsuldeminas.edu.br/contato" target="_blank" rel="noopener noreferrer">
-            <strong>Contato</strong>
-            <span>Fale com o campus e encontre informações úteis.</span>
-          </a>
-          <a class="service-card reveal" href="#">
-            <strong>Agenda da Diretora</strong>
-            <span>Espaço para divulgação de compromissos institucionais.</span>
-          </a>
-          <a class="service-card reveal" href="#">
-            <strong>Comunicação</strong>
-            <span>Canal de notícias, avisos e ações de divulgação.</span>
-          </a>
-          <a class="service-card reveal" href="#">
-            <strong>Transparência</strong>
-            <span>Acesso a dados e informações institucionais.</span>
-          </a>
-          <a class="service-card reveal" href="https://www.ifsuldeminas.edu.br/ouvidoria" target="_blank" rel="noopener noreferrer">
-            <strong>Ouvidoria</strong>
-            <span>Canal oficial para manifestações e atendimento ao cidadão.</span>
-          </a>
-          <a class="service-card reveal" href="#noticias">
-            <strong>Mais notícias</strong>
-            <span>Consulte os destaques e comunicados publicados.</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="destaques">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Destaques</span>
-            <h2>Atalhos em evidência</h2>
-            <p>Bloco baseado nos botões principais exibidos no portal do Campus Machado.</p>
-          </div>
-        </div>
-
-        <div class="highlight-grid">
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">🎓</div>
-            <h3>Portal do Aluno</h3>
-            <p>Acesso acadêmico centralizado.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">👥</div>
-            <h3>Portal do Servidor</h3>
-            <p>Recursos internos e administrativos.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">🏛️</div>
-            <h3>Portal da Administração</h3>
-            <p>Ferramentas e sistemas institucionais.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">💚</div>
-            <h3>Bolsas e Auxílios</h3>
-            <p>Apoio estudantil e benefícios.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">📝</div>
-            <h3>Vestibular</h3>
-            <p>Processos seletivos e ingresso.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">📢</div>
-            <h3>Editais</h3>
-            <p>Chamadas, seleções e oportunidades.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">🔎</div>
-            <h3>Transparência</h3>
-            <p>Dados e informações públicas.</p>
-          </a>
-          <a class="highlight-card reveal" href="#">
-            <div class="icon-circle">💻</div>
-            <h3>Capacita em Rede</h3>
-            <p>Formação e desenvolvimento online.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cursos">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Nossos cursos</span>
-            <h2>Formações organizadas por modalidade</h2>
-            <p>A composição abaixo foi aproximada a partir das áreas e cursos exibidos no portal oficial.</p>
-          </div>
-        </div>
-
-        <div class="course-columns">
-          <article class="course-block reveal">
-            <div class="course-head">
-              <h3>Técnicos</h3>
-              <a href="https://portal.mch.ifsuldeminas.edu.br/tecnicos" target="_blank" rel="noopener noreferrer">Abrir página</a>
+      <section class="section alt" id="campus">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Campus</span>
+              <h2>Estrutura institucional</h2>
+              <p>
+                Seção baseada nos atalhos de navegação do portal para áreas
+                internas do campus.
+              </p>
             </div>
-            <ul>
-              <li>Agropecuária (integrado)</li>
-              <li>Alimentos (integrado)</li>
-              <li>Informática (integrado)</li>
-              <li>Administração (subsequente)</li>
-              <li>Agropecuária (subsequente)</li>
-              <li>Enfermagem (subsequente)</li>
-              <li>Meio Ambiente (concomitante)</li>
-              <li>Segurança do Trabalho (subsequente)</li>
-            </ul>
-          </article>
-
-          <article class="course-block reveal">
-            <div class="course-head">
-              <h3>Superiores</h3>
-              <a href="https://portal.mch.ifsuldeminas.edu.br/superiores" target="_blank" rel="noopener noreferrer">Abrir página</a>
-            </div>
-            <ul>
-              <li>Administração</li>
-              <li>Alimentos</li>
-              <li>Ciências Biológicas</li>
-              <li>Computação</li>
-              <li>Agronomia</li>
-              <li>Sistemas de Informação</li>
-              <li>Zootecnia</li>
-              <li>Pedagogia EaD</li>
-            </ul>
-          </article>
-
-          <article class="course-block reveal compact">
-            <div class="course-head">
-              <h3>Outras modalidades</h3>
-              <a href="#acesso-rapido">Ver atalhos</a>
-            </div>
-            <ul>
-              <li><a href="https://portal.mch.ifsuldeminas.edu.br/pos-graduacao-lato-sensu" target="_blank" rel="noopener noreferrer">Pós-graduação - Lato Sensu</a></li>
-              <li><a href="https://portal.mch.ifsuldeminas.edu.br/mestrado-em-alimentos" target="_blank" rel="noopener noreferrer">Mestrado em Alimentos</a></li>
-              <li><a href="#">Cursos FIC</a></li>
-              <li><a href="https://portal.mch.ifsuldeminas.edu.br/cursos-ead" target="_blank" rel="noopener noreferrer">Cursos EaD</a></li>
-              <li><a href="https://mooc.mch.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">MOOCs</a></li>
-              <li><a href="#">Como ingressar</a></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="campus">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Campus</span>
-            <h2>Estrutura institucional</h2>
-            <p>Seção baseada nos atalhos de navegação do portal para áreas internas do campus.</p>
           </div>
-        </div>
 
-        <div class="link-card-grid">
-          <a class="link-card reveal" href="#">Direção</a>
-          <a class="link-card reveal" href="#">Sobre o Campus</a>
-          <a class="link-card reveal" href="#">Contato Servidores</a>
-          <a class="link-card reveal" href="#">Gabinete</a>
-          <a class="link-card reveal" href="#">NTI</a>
-          <a class="link-card reveal" href="#">Ensino</a>
-          <a class="link-card reveal" href="#">Órgãos Colegiados</a>
-          <a class="link-card reveal" href="#">NIPE</a>
-          <a class="link-card reveal" href="#">Fadema</a>
-          <a class="link-card reveal" href="#">Análise de Solos e Foliares</a>
-          <a class="link-card reveal" href="https://estacaocultura.radio.br" target="_blank" rel="noopener noreferrer">Rádio Estação Cultura FM</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="pesquisa">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Pesquisa, Pós-graduação e Inovação</span>
-            <h2>Pesquisa e inovação em evidência</h2>
-            <p>Reorganização dos atalhos do portal para facilitar a leitura e a navegação.</p>
-          </div>
-        </div>
-
-        <div class="feature-layout">
-          <article class="feature-panel reveal">
-            <h3>Áreas estratégicas</h3>
-            <p>
-              O portal oficial destaca pesquisa, programas de pós-graduação, comitês, laboratórios,
-              editais e iniciativas de inovação. Aqui, esses conteúdos aparecem em uma grade mais clara.
-            </p>
-          </article>
-          <div class="link-card-grid small-gap">
-            <a class="link-card reveal" href="#">Apresentação</a>
+          <div class="link-card-grid">
+            <a class="link-card reveal" href="#">Direção</a>
+            <a class="link-card reveal" href="#">Sobre o Campus</a>
+            <a class="link-card reveal" href="#">Contato Servidores</a>
+            <a class="link-card reveal" href="#">Gabinete</a>
+            <a class="link-card reveal" href="#">NTI</a>
+            <a class="link-card reveal" href="#">Ensino</a>
+            <a class="link-card reveal" href="#">Órgãos Colegiados</a>
             <a class="link-card reveal" href="#">NIPE</a>
-            <a class="link-card reveal" href="#">Mestrado</a>
-            <a class="link-card reveal" href="https://portal.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">Polo Embrapii</a>
-            <a class="link-card reveal" href="https://gppex.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">GPPEX</a>
-            <a class="link-card reveal" href="#">Comitê de Ética em Pesquisa</a>
-            <a class="link-card reveal" href="#">Editais</a>
-            <a class="link-card reveal" href="#">CEUA</a>
-            <a class="link-card reveal" href="#">Laboratórios</a>
-            <a class="link-card reveal" href="#">Equipe DPPI</a>
-            <a class="link-card reveal" href="#">Notícias - Pesquisa</a>
+            <a class="link-card reveal" href="#">Fadema</a>
+            <a class="link-card reveal" href="#">Análise de Solos e Foliares</a>
+            <a
+              class="link-card reveal"
+              href="https://estacaocultura.radio.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rádio Estação Cultura FM</a
+            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt" id="extensao">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Extensão</span>
-            <h2>Conexão com a comunidade</h2>
-            <p>Bloco inspirado nos atalhos de extensão encontrados no portal do Campus Machado.</p>
+      <section class="section" id="pesquisa">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag"
+                >Pesquisa, Pós-graduação e Inovação</span
+              >
+              <h2>Pesquisa e inovação em evidência</h2>
+              <p>
+                Reorganização dos atalhos do portal para facilitar a leitura e a
+                navegação.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-layout">
+            <article class="feature-panel reveal">
+              <h3>Áreas estratégicas</h3>
+              <p>
+                O portal oficial destaca pesquisa, programas de pós-graduação,
+                comitês, laboratórios, editais e iniciativas de inovação. Aqui,
+                esses conteúdos aparecem em uma grade mais clara.
+              </p>
+            </article>
+            <div class="link-card-grid small-gap">
+              <a class="link-card reveal" href="#">Apresentação</a>
+              <a class="link-card reveal" href="#">NIPE</a>
+              <a class="link-card reveal" href="#">Mestrado</a>
+              <a
+                class="link-card reveal"
+                href="https://portal.ifsuldeminas.edu.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Polo Embrapii</a
+              >
+              <a
+                class="link-card reveal"
+                href="https://gppex.ifsuldeminas.edu.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GPPEX</a
+              >
+              <a class="link-card reveal" href="#"
+                >Comitê de Ética em Pesquisa</a
+              >
+              <a class="link-card reveal" href="#">Editais</a>
+              <a class="link-card reveal" href="#">CEUA</a>
+              <a class="link-card reveal" href="/Laboratorios/mostruario.html"
+                >Laboratórios</a
+              >
+              <a class="link-card reveal" href="#">Equipe DPPI</a>
+              <a class="link-card reveal" href="#">Notícias - Pesquisa</a>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="link-card-grid">
-          <a class="link-card reveal" href="#">Conheça a Extensão</a>
-          <a class="link-card reveal" href="#">Fale conosco</a>
-          <a class="link-card reveal" href="#">Editais de Extensão</a>
-          <a class="link-card reveal" href="#">Projetos de Extensão</a>
-          <a class="link-card reveal" href="#">Cursos FIC</a>
-          <a class="link-card reveal" href="#">Estágios</a>
-          <a class="link-card reveal" href="#">Eventos</a>
-          <a class="link-card reveal" href="#">Agendamento de Visitas</a>
-          <a class="link-card reveal" href="#">GAPE</a>
-          <a class="link-card reveal" href="#">Curricularização da Extensão</a>
-          <a class="link-card reveal" href="#">Jovem Aprendiz</a>
-          <a class="link-card reveal" href="#">Egressos</a>
-          <a class="link-card reveal" href="#">Notícias - Extensão</a>
-        </div>
-      </div>
-    </section>
+      <section class="section alt" id="extensao">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Extensão</span>
+              <h2>Conexão com a comunidade</h2>
+              <p>
+                Bloco inspirado nos atalhos de extensão encontrados no portal do
+                Campus Machado.
+              </p>
+            </div>
+          </div>
 
-    <section class="section" id="oportunidades">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Oportunidades</span>
-            <h2>Editais, inscrições e chamadas</h2>
-            <p>Textos curtos derivados dos títulos exibidos no portal, reorganizados em cartões.</p>
+          <div class="link-card-grid">
+            <a class="link-card reveal" href="#">Conheça a Extensão</a>
+            <a class="link-card reveal" href="#">Fale conosco</a>
+            <a class="link-card reveal" href="#">Editais de Extensão</a>
+            <a class="link-card reveal" href="#">Projetos de Extensão</a>
+            <a class="link-card reveal" href="#">Cursos FIC</a>
+            <a class="link-card reveal" href="#">Estágios</a>
+            <a class="link-card reveal" href="#">Eventos</a>
+            <a class="link-card reveal" href="#">Agendamento de Visitas</a>
+            <a class="link-card reveal" href="#">GAPE</a>
+            <a class="link-card reveal" href="#"
+              >Curricularização da Extensão</a
+            >
+            <a class="link-card reveal" href="#">Jovem Aprendiz</a>
+            <a class="link-card reveal" href="#">Egressos</a>
+            <a class="link-card reveal" href="#">Notícias - Extensão</a>
           </div>
         </div>
+      </section>
 
-        <div class="news-grid two-columns">
-          <article class="news-card reveal">
-            <span class="badge">EaD</span>
-            <h3>Seleção para o curso Google Docs na modalidade a distância</h3>
-            <p>Exemplo de card para destacar processos seletivos, chamadas de inscrição e cursos abertos.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Extensão</span>
-            <h3>Submissão de projetos de extensão com fomento interno</h3>
-            <p>Espaço para divulgar editais de apoio, seleção de propostas e ações institucionais.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Pesquisa</span>
-            <h3>NIPE abre edital para fomento de projetos de pesquisa e inovação</h3>
-            <p>Modelo de exibição mais legível para chamadas acadêmicas e científicas.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Monitoria</span>
-            <h3>Inscrições para monitoria remunerada de cursos técnicos e superiores</h3>
-            <p>Organização visual pensada para orientar o estudante rapidamente ao conteúdo.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Inclusão</span>
-            <h3>Seleção de bolsistas de iniciação em educação inclusiva</h3>
-            <p>Card com foco em chamadas sensíveis e oportunidades de participação estudantil.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Auxílio</span>
-            <h3>Auxílio estudantil com solicitação ao longo de todo o ano letivo</h3>
-            <p>Bloco voltado para benefícios e acompanhamento de editais contínuos.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="section" id="oportunidades">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Oportunidades</span>
+              <h2>Editais, inscrições e chamadas</h2>
+              <p>
+                Textos curtos derivados dos títulos exibidos no portal,
+                reorganizados em cartões.
+              </p>
+            </div>
+          </div>
 
-    <section class="section alt" id="noticias">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Notícias</span>
-            <h2>Conteúdos recentes do Campus Machado</h2>
-            <p>Cards inspirados nas manchetes encontradas no portal oficial.</p>
+          <div class="news-grid two-columns">
+            <article class="news-card reveal">
+              <span class="badge">EaD</span>
+              <h3>
+                Seleção para o curso Google Docs na modalidade a distância
+              </h3>
+              <p>
+                Exemplo de card para destacar processos seletivos, chamadas de
+                inscrição e cursos abertos.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Extensão</span>
+              <h3>Submissão de projetos de extensão com fomento interno</h3>
+              <p>
+                Espaço para divulgar editais de apoio, seleção de propostas e
+                ações institucionais.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Pesquisa</span>
+              <h3>
+                NIPE abre edital para fomento de projetos de pesquisa e inovação
+              </h3>
+              <p>
+                Modelo de exibição mais legível para chamadas acadêmicas e
+                científicas.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Monitoria</span>
+              <h3>
+                Inscrições para monitoria remunerada de cursos técnicos e
+                superiores
+              </h3>
+              <p>
+                Organização visual pensada para orientar o estudante rapidamente
+                ao conteúdo.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Inclusão</span>
+              <h3>Seleção de bolsistas de iniciação em educação inclusiva</h3>
+              <p>
+                Card com foco em chamadas sensíveis e oportunidades de
+                participação estudantil.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Auxílio</span>
+              <h3>
+                Auxílio estudantil com solicitação ao longo de todo o ano letivo
+              </h3>
+              <p>
+                Bloco voltado para benefícios e acompanhamento de editais
+                contínuos.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="news-grid">
-          <article class="news-card reveal">
-            <span class="badge">Campus</span>
-            <h3>Ações de conscientização sobre o autismo ao longo de abril</h3>
-            <p>Exemplo de notícia institucional com resumo curto e hierarquia visual mais clara.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Pesquisa</span>
-            <h3>Destaque no Congresso Técnico Científico de Agricultura Orgânica na UNICAMP</h3>
-            <p>Modelo para evidenciar conquistas acadêmicas e participação em eventos científicos.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Formatura</span>
-            <h3>Solenidades de formatura marcam trajetórias de superação estudantil</h3>
-            <p>Estrutura adequada para notícias com foco humano e institucional.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Mestrado</span>
-            <h3>Prêmio de melhores dissertações do mestrado</h3>
-            <p>Formato pensado para ampliar a visibilidade das produções acadêmicas.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Acolhimento</span>
-            <h3>Orientações para novos alunos sobre normas e convivência escolar</h3>
-            <p>Notícia de serviço em um padrão visual mais amigável para leitura rápida.</p>
-          </article>
-          <article class="news-card reveal">
-            <span class="badge">Vida estudantil</span>
-            <h3>Roda de conversa sobre equilíbrio entre estudos, trabalho e saúde mental</h3>
-            <p>Espaço para temas de permanência, acolhimento e bem-estar estudantil.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      <section class="section alt" id="noticias">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Notícias</span>
+              <h2>Conteúdos recentes do Campus Machado</h2>
+              <p>
+                Cards inspirados nas manchetes encontradas no portal oficial.
+              </p>
+            </div>
+          </div>
 
-    <section class="section" id="acontece">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Acontece no IFSULDEMINAS</span>
-            <h2>Notícias da instituição</h2>
-            <p>Bloco inspirado nas chamadas do portal institucional exibidas dentro do site do campus.</p>
+          <div class="news-grid">
+            <article class="news-card reveal">
+              <span class="badge">Campus</span>
+              <h3>
+                Ações de conscientização sobre o autismo ao longo de abril
+              </h3>
+              <p>
+                Exemplo de notícia institucional com resumo curto e hierarquia
+                visual mais clara.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Pesquisa</span>
+              <h3>
+                Destaque no Congresso Técnico Científico de Agricultura Orgânica
+                na UNICAMP
+              </h3>
+              <p>
+                Modelo para evidenciar conquistas acadêmicas e participação em
+                eventos científicos.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Formatura</span>
+              <h3>
+                Solenidades de formatura marcam trajetórias de superação
+                estudantil
+              </h3>
+              <p>
+                Estrutura adequada para notícias com foco humano e
+                institucional.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Mestrado</span>
+              <h3>Prêmio de melhores dissertações do mestrado</h3>
+              <p>
+                Formato pensado para ampliar a visibilidade das produções
+                acadêmicas.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Acolhimento</span>
+              <h3>
+                Orientações para novos alunos sobre normas e convivência escolar
+              </h3>
+              <p>
+                Notícia de serviço em um padrão visual mais amigável para
+                leitura rápida.
+              </p>
+            </article>
+            <article class="news-card reveal">
+              <span class="badge">Vida estudantil</span>
+              <h3>
+                Roda de conversa sobre equilíbrio entre estudos, trabalho e
+                saúde mental
+              </h3>
+              <p>
+                Espaço para temas de permanência, acolhimento e bem-estar
+                estudantil.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="institutional-list">
-          <a class="institutional-item reveal" href="https://portal.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">
-            <strong>Pesquisa sobre qualidade de vida estudantil</strong>
-            <span>Chamada institucional para participação da comunidade acadêmica.</span>
-          </a>
-          <a class="institutional-item reveal" href="https://portal.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">
-            <strong>Aquisição de novos computadores para laboratórios e setores</strong>
-            <span>Exemplo de atualização institucional replicada no portal do campus.</span>
-          </a>
-          <a class="institutional-item reveal" href="https://portal.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">
-            <strong>Relatório de Gestão com resultados e avanços institucionais</strong>
-            <span>Conteúdo que aproxima o usuário de informações estratégicas da instituição.</span>
-          </a>
-        </div>
-      </div>
-    </section>
+      <section class="section" id="acontece">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Acontece no IFSULDEMINAS</span>
+              <h2>Notícias da instituição</h2>
+              <p>
+                Bloco inspirado nas chamadas do portal institucional exibidas
+                dentro do site do campus.
+              </p>
+            </div>
+          </div>
 
-    <section class="section alt" id="acesso-rapido">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="section-tag">Acesso rápido</span>
-            <h2>Atalhos úteis para navegação diária</h2>
-            <p>Releitura da área inferior do portal com foco em utilidade imediata.</p>
+          <div class="institutional-list">
+            <a
+              class="institutional-item reveal"
+              href="https://portal.ifsuldeminas.edu.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>Pesquisa sobre qualidade de vida estudantil</strong>
+              <span
+                >Chamada institucional para participação da comunidade
+                acadêmica.</span
+              >
+            </a>
+            <a
+              class="institutional-item reveal"
+              href="https://portal.ifsuldeminas.edu.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong
+                >Aquisição de novos computadores para laboratórios e
+                setores</strong
+              >
+              <span
+                >Exemplo de atualização institucional replicada no portal do
+                campus.</span
+              >
+            </a>
+            <a
+              class="institutional-item reveal"
+              href="https://portal.ifsuldeminas.edu.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong
+                >Relatório de Gestão com resultados e avanços
+                institucionais</strong
+              >
+              <span
+                >Conteúdo que aproxima o usuário de informações estratégicas da
+                instituição.</span
+              >
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="quick-grid">
-          <a class="quick-card reveal" href="#">CPA</a>
-          <a class="quick-card reveal" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="quick-card reveal" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a class="quick-card reveal" href="https://estacaocultura.radio.br" target="_blank" rel="noopener noreferrer">Rádio Estação Cultura FM</a>
-          <a class="quick-card reveal" href="#">Portal do Aluno</a>
-          <a class="quick-card reveal" href="#">Vestibular</a>
-          <a class="quick-card reveal" href="#">Editais</a>
-          <a class="quick-card reveal" href="#">Transparência</a>
+      <section class="section alt" id="acesso-rapido">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <span class="section-tag">Acesso rápido</span>
+              <h2>Atalhos úteis para navegação diária</h2>
+              <p>
+                Releitura da área inferior do portal com foco em utilidade
+                imediata.
+              </p>
+            </div>
+          </div>
+
+          <div class="quick-grid">
+            <a class="quick-card reveal" href="#">CPA</a>
+            <a
+              class="quick-card reveal"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            <a
+              class="quick-card reveal"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            <a
+              class="quick-card reveal"
+              href="https://estacaocultura.radio.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Rádio Estação Cultura FM</a
+            >
+            <a class="quick-card reveal" href="#">Portal do Aluno</a>
+            <a class="quick-card reveal" href="#">Vestibular</a>
+            <a class="quick-card reveal" href="#">Editais</a>
+            <a class="quick-card reveal" href="#">Transparência</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>IFSULDEMINAS Campus Machado</h3>
+          <p>
+            Exemplo de página estática criado para estudo, inspirado na
+            organização real do portal institucional e separado em HTML, CSS e
+            JavaScript.
+          </p>
+        </div>
+
+        <div>
+          <h4>Seções</h4>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#destaques">Destaques</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Links externos</h4>
+          <ul>
+            <li>
+              <a
+                href="https://portal.mch.ifsuldeminas.edu.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portal oficial</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://portal.ifsuldeminas.edu.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portal IFSULDEMINAS</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://mooc.mch.ifsuldeminas.edu.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MOOCs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://estacaocultura.radio.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Rádio Estação Cultura FM</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <h3>IFSULDEMINAS Campus Machado</h3>
-        <p>
-          Exemplo de página estática criado para estudo, inspirado na organização real do portal
-          institucional e separado em HTML, CSS e JavaScript.
-        </p>
-      </div>
-
-      <div>
-        <h4>Seções</h4>
-        <ul>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#destaques">Destaques</a></li>
-          <li><a href="#cursos">Cursos</a></li>
-          <li><a href="#noticias">Notícias</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Links externos</h4>
-        <ul>
-          <li><a href="https://portal.mch.ifsuldeminas.edu.br/" target="_blank" rel="noopener noreferrer">Portal oficial</a></li>
-          <li><a href="https://portal.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">Portal IFSULDEMINAS</a></li>
-          <li><a href="https://mooc.mch.ifsuldeminas.edu.br" target="_blank" rel="noopener noreferrer">MOOCs</a></li>
-          <li><a href="https://estacaocultura.radio.br" target="_blank" rel="noopener noreferrer">Rádio Estação Cultura FM</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
