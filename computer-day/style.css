@@ -28,6 +28,33 @@ h1, h2, h3, h4, .logo {
     font-family: 'Outfit', sans-serif;
 }
 
+
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--accent-gradient);
+    z-index: 1001;
+    transition: width 0.1s ease-out;
+}
+
+/* Melhoria de Acessibilidade: Foco visível para navegação via teclado */
+a:focus, button:focus {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 4px;
+}
+
+/* Efeito de Vidro (Glassmorphism) na Navbar ao scrollar */
+.navbar.scrolled {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Otimização de Imagens/Cards para não "pularem" no carregamento */
+.reveal {
+    will-change: transform, opacity;
+}
 /* Navbar */
 .navbar {
     position: fixed;
