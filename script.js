@@ -1,3 +1,4 @@
+// 1. Menu Mobile Toggle
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
@@ -15,30 +16,23 @@ if (menuToggle && mainNav) {
   });
 }
 
+// 2. Carrossel Principal Adaptado para Assistência Estudantil
 const heroSlides = [
   {
-    title: "Veja como foi o debate entre candidatos do Campus Machado.",
-    text: "Versão didática para representar o carrossel principal de chamadas do portal com foco em legibilidade e destaque visual."
+    title: "Inscrições abertas para o Auxílio Alimentação 2026/1",
+    text: "Garanta seu acesso ao refeitório institucional. Leia o edital completo e envie sua documentação pelo SUAP até o dia 15 deste mês."
   },
   {
-    title: "Eleição para reitor(a) e diretores(as) do IFSULDEMINAS.",
-    text: "Estrutura ideal para acomodar notícias institucionais de grande relevância com leitura rápida em desktop e mobile."
+    title: "Novas regras para o Auxílio Transporte intermunicipal",
+    text: "Atenção: A partir de agora, é necessário anexar também o comprovante de matrícula atualizado junto ao recibo da viação."
   },
   {
-    title: "Auxílio Estudantil com fluxo contínuo: mais facilidade para você!",
-    text: "Exemplo de chamada de serviço voltada ao estudante, com ênfase em acesso direto a benefícios e editais."
+    title: "Resultado Parcial: Auxílio Inclusão Digital (Tablets)",
+    text: "Confira a lista dos alunos pré-selecionados. O prazo para recurso e entrega de documentação faltante termina na próxima sexta-feira."
   },
   {
-    title: "Você no #IF! É nosso aluno? Inscreva-se aqui!",
-    text: "Bloco pensado para campanhas institucionais e comunicações voltadas à comunidade acadêmica."
-  },
-  {
-    title: "Cadastre-se e acompanhe nossos processos seletivos!",
-    text: "Uso do destaque principal para apoiar o ingresso de novos estudantes e divulgar oportunidades."
-  },
-  {
-    title: "Cadastre-se e acompanhe nossas oportunidades!",
-    text: "Componente flexível para chamadas rotativas de oportunidades, editais, bolsas e ações institucionais."
+    title: "Dúvidas sobre como preencher a Caracterização Social?",
+    text: "Preparamos um guia rápido em PDF e em vídeo mostrando tela por tela de como preencher seus dados no sistema SUAP corretamente."
   }
 ];
 
@@ -71,7 +65,7 @@ function prevHeroSlideFn() {
 }
 
 function startSlideRotation() {
-  slideInterval = setInterval(nextHeroSlide, 5000);
+  slideInterval = setInterval(nextHeroSlide, 5000); // Troca a cada 5 segundos
 }
 
 function restartSlideRotation() {
@@ -94,6 +88,7 @@ if (prevSlide && nextSlide) {
   startSlideRotation();
 }
 
+// 3. Efeito Reveal (Surgir ao rolar a tela)
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(
@@ -105,12 +100,13 @@ const revealObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.12
+    threshold: 0.12 // Elemento surge quando 12% dele aparece na tela
   }
 );
 
 revealElements.forEach((element) => revealObserver.observe(element));
 
+// 4. Marcação de Link Ativo no Menu conforme o Scroll
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".main-nav a[href^='#']");
 
