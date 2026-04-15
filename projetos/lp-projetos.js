@@ -18,8 +18,8 @@ if (menuToggle && mainNav) {
 const projectHighlights = [
   {
     tag: "Projeto 01",
-    title: "Robótica e Automação (GAPE)",
-    text: "Frente voltada para atividades práticas com automação, prototipagem e desenvolvimento técnico."
+    title: "GAPE Pixel (Autobots)",
+    text: "Grupo focado em design digital, multimídia, UX/UI, web e produção de materiais científicos."
   },
   {
     tag: "Projeto 02",
@@ -34,7 +34,7 @@ const projectHighlights = [
   {
     tag: "Projeto 04",
     title: "Meninas Digitais",
-    text: "Iniciativa de incentivo à participação feminina em tecnologia, computação e inovação."
+    text: "Iniciativa cadastrada na SBC para ampliar a participação feminina em TI, computação e inovação."
   }
 ];
 
